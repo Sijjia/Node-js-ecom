@@ -1,6 +1,7 @@
 const Product = require("../models/productModel")
 const asyncHandler = require("express-async-handler") // для обработки ошибок в асинхронных операциях
 const slugify = require("slugify")
+const validateMongoDbId = require("../utils/validateMingodbid")
 
 //Создание продукта
 const createProduct = asyncHandler( async (req, res) => {
